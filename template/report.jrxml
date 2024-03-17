@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c852bdb6-8528-4302-a535-9caca9985d62">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nombre_field" class="java.lang.String"/>
+	<field name="apellido_field" class="java.lang.String"/>
+	<field name="edad_field" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="550" height="81" uuid="b0d4333e-7927-475c-967c-51449b930d19">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="26"/>
+				</textElement>
+				<text><![CDATA[Reporte en python]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="129" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="50" height="20" uuid="18db6543-0921-4936-814f-68a15fa9dbb7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="53" width="49" height="20" uuid="e8b4b1d5-6e39-40e6-9956-f943c0088269"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Apellido:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="49" height="20" uuid="4d54fa71-e7fe-4c7c-886a-a112cea751bb"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Edad:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="15" width="100" height="20" uuid="14742dd0-5655-4e4f-afb7-8cede7f30276"/>
+				<textFieldExpression><![CDATA[$F{nombre_field}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="53" width="100" height="20" uuid="fd2020ff-c7a1-414c-b523-d742b26cf1a8">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{apellido_field}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="90" width="100" height="20" uuid="73bd28e7-4be4-4818-8480-33a9b25cbe98">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{edad_field}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="50"/>
+	</detail>
+</jasperReport>

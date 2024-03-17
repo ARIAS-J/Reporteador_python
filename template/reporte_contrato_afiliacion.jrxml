@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteContrato" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a8f7abf2-a8e3-4699-9285-fc4c7a52f217">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="apellido_field" class="java.lang.String"/>
+	<parameter name="nombre_field" class="java.lang.String"/>
+	<parameter name="ocupacion_field" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="nombre_field" class="java.lang.String"/>
+	<field name="apellido_field" class="java.lang.String"/>
+	<field name="ocupacion_field" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="137" splitType="Stretch">
+			<image hAlign="Center">
+				<reportElement x="16" y="34" width="160" height="37" uuid="7f494229-0452-4e2d-9903-fa75d47b36ef">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["C:/Users/joel_/Downloads/afp-popular-logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="460" y="12" width="80" height="80" uuid="dc6153c5-0853-414e-bc4d-0875f7ab567d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA["C:/Users/joel_/Downloads/1200px-Codigo_QR.svg.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="380" y="99" width="100" height="18" uuid="ff230a71-420d-41af-a63d-ab00b7c40c7a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Fecha Suscripcion:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="480" y="100" width="60" height="17" uuid="f8a8fbd0-75e0-445c-abc4-2571afdae9ce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["11/03/2024"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="54">
+			<staticText>
+				<reportElement x="196" y="12" width="163" height="28" uuid="7d001df1-20fd-4e62-a296-87abdd6aea59"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="16"/>
+				</textElement>
+				<text><![CDATA[Contrato de Afiliacion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="100" height="30" uuid="5ba71d7c-9315-41e2-b0cd-e56805d2dd56">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f0035d6f-8323-49ee-9907-d29f5fb51140"/>
+				</reportElement>
+				<text><![CDATA[ocupacion_field]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="331" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle radius="2">
+				<reportElement x="16" y="-1" width="524" height="131" uuid="2f73512d-ae6b-4575-a02c-9cceab9d83e6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="22" y="-12" width="87" height="21" backcolor="#FFFFFF" uuid="47917f88-0b2d-414b-b72e-af6de87fc7b4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Datos Personales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="29" width="43" height="15" uuid="537614d9-274c-4b28-84e9-38f79e4e0966">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="29" width="44" height="15" uuid="9b6ab52e-fa62-4a28-b41c-5121ae1697d5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Apellido:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="30" width="57" height="15" uuid="d2c2407f-05e3-4460-9fad-db4e15ac85f9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Ocupacion:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="34" y="100" width="486" height="23" uuid="7932410c-1f10-4397-8505-57607b35c7c9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Aplica para afiliacion"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="30" width="83" height="15" uuid="7b6e7c7c-7f5c-44ff-bf2d-d8f733646c7d">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nombre_field}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="30" width="83" height="15" uuid="6c369713-b600-4da8-bb0a-3a8d96a43430">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{apellido_field}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="397" y="30" width="93" height="15" uuid="ddace90f-31b6-4ced-aa02-01b6a521c5cb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f0035d6f-8323-49ee-9907-d29f5fb51140"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ocupacion_field}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
