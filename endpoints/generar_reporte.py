@@ -11,7 +11,6 @@ router = APIRouter()
 @router.post('/generar_reporte')
 def generar_reporte_py(body: ContratoAfiliacion):
 
-    print(body)
     data = generar_reporte(body=body)
 
     report_path = data['report_path']
